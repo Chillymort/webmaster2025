@@ -16,6 +16,9 @@ header {
     font-weight: bold;
 
 }
+img {
+    padding: 15px;
+}
 .southamerica {
     margin: 0;
     height: 100vh;
