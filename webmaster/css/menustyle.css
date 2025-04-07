@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baskervville";
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+nav {
+    padding: 30px;
+}
+header {
+    padding: 60px;
+    text-align: center;
+    background-color: rgb(142, 157, 169);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.southamerica {
+    margin: 0;
+    height: 100vh;
+
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(235, 232, 224);
+    padding: 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: solid rgb(60, 85, 117) 10px; 
+    border-bottom: solid rgb(60, 85, 117) 10px; 
+}
+
+.containerize-column{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(235, 232, 224);
+}
+.containerize-row{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(235, 232, 224);
+}
+
+.item {
+    display: inline-block;
+    /*border: 1px solid black; */
+    vertical-align: middle;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    margin: 15px; 
+    height: 500px;
+    width: 500px;
+}
+
+.item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+.top_corner {
+
+    width: 100vw;
+    right: 0;
+
+}
+
+.drinks{
+    display: inline-block;
+    /*border: 1px solid black; */
+    vertical-align: middle;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    margin: 15px; 
+    height: 350px;
+    width: 350px;
+    
+}
+.drinks h4 {
+    font-weight: bold;
+    font-size: 22px;
+}
