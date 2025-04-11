@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baskervville";
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+nav {
+    padding: 30px;
+}
+header {
+    padding: 60px;
+    text-align: center;
+    background-color: rgb(142, 157, 169);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.aboutus {
+    margin: 0;
+    height: 100vh;
+
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(235, 232, 224);
+    padding: 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: solid rgb(60, 85, 117) 10px; 
+    border-bottom: solid rgb(60, 85, 117) 10px; 
+}
+
+.containerize-column{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(235, 232, 224);
+}
+.containerize-row{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(235, 232, 224);
+}
+
+.text{
+    width: 55%;
+}
+
+p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.image-container {
+    width: 40%;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
