@@ -5,7 +5,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Karla;
     box-sizing: border-box;
 }
 .Logo{
@@ -22,6 +23,23 @@
 }
 .quicklinks{
     line-height: 60px;
+    font-size: 15px;
+}
+.quicklinks a{
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+.quicklinks a:hover {
+    background-color: rgb(50, 104, 161);
+    padding: 15px;
+    text-decoration: underline ;
+    color: white;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .quicklinks ul{
     list-style-type: none;
@@ -36,8 +54,22 @@
 }
 a{
     /* potential colors: #93C560 */
-    color:#d5df80;
+    color:#75a140;
+    font-weight: bold;
     text-decoration: none;
+}
+.padding{
+    padding: 10px;
+}
+.message-container{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    border: 1px solid rgb(50, 104, 161);
+    /*border-left: 10px solid rgb(50, 104, 161);*/
+    margin-bottom: 25px;
+    margin-top: 25px;
+    box-shadow: 5px 10px rgb(50, 104, 161);
 }
 .container{
     width: 90%;
@@ -70,6 +102,7 @@ a{
     transform-style: preserve-3d;
     transition: all 1s ease;
 }
+
 .content{
     width: 100%;
     height: 100%;
@@ -82,6 +115,7 @@ a{
 .content h2{
     margin-bottom: 1rem;
 }
+
 .cover{
     position: absolute;
     top: 0;
@@ -119,4 +153,29 @@ a{
     background-color: #ffffff;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.Navbar{
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
+
+.dark-background{
+    background-color:rgb(50, 104, 161);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+    box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+}
+.dark-background a{
+    color: white;
+}
+.dark-background a:hover{
+    background-color: white;
+    color: rgb(194, 48, 104);
+    border-color: rgb(50, 104, 161);
 }
