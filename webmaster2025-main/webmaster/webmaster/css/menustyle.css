@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baskervville";
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+.southamerica {
+    margin: 0;
+    height: 100vh;
+}
+/* a{
+    color:black;
+    text-decoration: none;
+} */
+
+.container {
+    text-align: center;
+    background-color: rgb(235, 232, 224);
+    padding: 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: solid rgb(60, 85, 117) 10px; 
+    border-bottom: solid rgb(60, 85, 117) 10px; 
+}
+
+.containerize-column{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(235, 232, 224);
+}
+.containerize-row{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(235, 232, 224);
+}
+
+.item {
+    display: inline-block;
+    /*border: 1px solid black; */
+    vertical-align: middle;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    margin: 15px; 
+    height: 500px;
+    width: 500px;
+}
+
+.item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+.top_corner {
+
+    width: 100vw;
+    right: 0;
+
+}
+
+.drinks{
+    display: inline-block;
+    /*border: 1px solid black; */
+    vertical-align: middle;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    margin: 15px; 
+    height: 350px;
+    width: 350px;
+    
+}
+.drinks h4 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.Navbar{
+    position: sticky;
+    background-color: rgb(235, 232, 224);
+    top: 0;
+}
+
+.dark-background{
+    background-color:rgb(50, 104, 161);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+    box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+}
+.dark-background a{
+    color: rgb(50, 104, 161);
+}
+.dark-background a:hover{
+    background-color: white;
+    color: rgb(194, 48, 104);
+    border-color: rgb(50, 104, 161);
+}
+.Logo{
+    float: left;
+    padding-top: 20px;
+}
+.Logo ul{
+    list-style-type: none;
+}
+.Logo ul li{
+    display: inline;
+}
+
+.text-right{
+    text-align: right;
+}
+.quicklinks{
+    line-height: 60px;
+    font-size: 15px;
+    padding:20px;
+}
+.quicklinks a{
+    padding: 15px;
+    border: 1px solid;
+    background-color: white;
+    border-radius: 8px;
+}
+.quicklinks a:hover {
+    background-color: rgb(50, 104, 161);
+    padding: 15px;
+    text-decoration: underline ;
+    color: white;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.quicklinks ul{
+    list-style-type: none;
+}
+.quicklinks ul li{
+    display: inline;
+    padding: 1%;
+}
+.clearfix{
+    clear:both;
+    float:none;
+}
+a{
+    /* potential colors: #93C560 */
+    color:#75a140;
+    font-weight: bold;
+    text-decoration: none;
+}
+.dropdown {
+    float: right;
+    overflow: hidden;
+    padding-left: 15px;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    outline: none;
+    color: #75a140;
+    padding: 14px 16px;
+    background-color: white;
+    font-family: inherit;
+    margin: 0;
+    border: 1px solid #75a140;
+    border-radius: 8px; 
+    padding: 15px;
+
+}
+  
+.Navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(50, 104, 161);
+    color: white;
+    border-color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(111, 157, 206);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container2{
+    padding: 20px;
+}
