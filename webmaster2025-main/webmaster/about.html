@@ -8,48 +8,18 @@
     <title>About Us</title>
 
     <link href = "https://fonts.googleapis.com/css?family=Baskervville" rel = "stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Link of CSS File-->
     <link rel="stylesheet" href="css/aboutus.css">
 </head>
 <body>
-    <section class="Navbar" id = "Navbar">
-        <div class="container2">
-            <div class="Logo">
-                <ul>
-                    <li>
-                        <img src="images/jclogo.png" alt="JC Logo">
-                    </li>
-                    <li>
-                        <img src="images/tsalogo.png" alt="TSA Logo">
-                    </li>
-                </ul>
-            </div>
-
-            <div class="quicklinks text-right">
-                <ul>
-                    <li>
-                        <a href="index.html"><i class="fa fa-fw fa-home" style = "padding-right: 15px;"></i>Home</a>
-                    </li>
-                    <li>
-                        <a href="menu.html"><i class="fa fa-fw fa-cutlery" style = "padding-right: 15px;"></i>Menu</a>
-                    </li>
-                    <li>
-                        <a href="about.html"><i class="fa fa-fw fa-user" style = "padding-right: 15px;"></i>About</a>
-                    </li>
-                    <li>
-                        <a href="references.html"><i class="fa fa-fw fa-copyright" style = "padding-right: 15px;"></i>References</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
-    </section>
+    <!-- MAKE A NAV BAR TO NAV BACK TO HOME PAGE-->
+     <nav>
+        <a href="index.html">Home</a>
+     </nav>
     <header>
         <h1>Choripan Grill</h1>
     </header>
-    <div class = "aboutus" id = "about">
+    <div class = "aboutus">
         <h2 style = "text-align: center; padding: 35px; " >About Us</h2>
             <div class = "container">
                 <!-- Appetizers -->
@@ -84,23 +54,6 @@
        
         </div> 
     </div>
-    <!--Footer Start-->
-    <section class="Footer" style = "background-color: white">
-        <div class="container2">
-            <p>All rights reserved. Designed by James Clemens TSA.</p>
-        </div>
-    </section>
-    <script>
-        var navOffset = document.getElementById("about").offsetTop;
-        window.addEventListener("scroll", () => {
-            const scrollPos = window.scrollY;
-            var nav = document.getElementById("Navbar");
-            if (scrollPos > navOffset){
-                nav.classList.add("dark-background");
-            } else {
-                nav.classList.remove("dark-background");
-            }
-        })
-    </script>
+
 </body>
 </html>
