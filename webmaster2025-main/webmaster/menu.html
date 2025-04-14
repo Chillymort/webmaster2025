@@ -13,17 +13,64 @@
     <link rel="stylesheet" href="css/menustyle.css">
 </head>
 <body>
-    <header>
-        <div class = "on-click">
-            <a href ="index.html" style = "font-size: 35px; border: none; "><i class="fa fa-home" style = "color: rgb(255, 255, 255)"></i></a>
-            <p style = "color: white; font-size: 12px; padding-bottom: 10px;">Click the icon to return home.</p>
+    <!-- <section class = "navbar">
+        <a href ="index.html" style = "font-size: 25px; border: none; "><i class="fa fa-home" style = "color: rgb(255, 255, 255)"> Home</i></a> 
+        <div class = "container2">
+            <ul>
+                <li><a href = "</li>
+            </ul>
         </div>
-        <h1 style = "font-weight: bold; color: white;">Choripan Grill </h1>
-    </header>
-    
-    <div class = "southamerican">
-        <h2 style = "text-align: center; padding: 35px; " >South American Cuisine</h2>
-        <h2 style = "padding: 30px; text-align: center; font-size: 40px; border-top: 1px solid black; margin-left: 30%; margin-right: 30%; font-weight: bold; " >Appetizers</h2>
+       
+    </section> -->
+    <!--Navbar Start-->
+    <section class="Navbar" id = "Navbar">
+        <div class="container2">
+            <div class="Logo">
+                <ul>
+                    <li>
+                        <img src="images/jclogo.png" alt="JC Logo">
+                    </li>
+                    <li>
+                        <img src="images/tsalogo.png" alt="TSA Logo">
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Menu 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#ap">Appetizers</a>
+                              <a href="#en">Entrees</a>
+                              <a href="#dr">Drinks</a>
+                              <a href="#de">Desserts</a>
+                            </div>
+                          </div> 
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="quicklinks text-right">
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-home" style = "padding-right: 15px;"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><i class="fa fa-fw fa-user" style = "padding-right: 15px;"></i>About</a>
+                    </li>
+                    <li>
+                        <a href="references.html"><i class="fa fa-fw fa-copyright" style = "padding-right: 15px;"></i>References</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <div class = "southamerican" id = "southamerican">
+        <h1 style = "padding: 25px; font-weight: bold; color: rgb(50, 104, 161); font-size: 50px; text-align: center;">Choripan Grill </h1>
+        <h2 style = "text-align: center; padding: 35px;" >South American Cuisine</h2>
+        <h2 style = "padding: 30px; text-align: center; font-size: 40px; border-top: 1px solid black; margin-left: 30%; margin-right: 30%; font-weight: bold; " id = "ap" >Appetizers</h2>
             <div class = "container">
                 <!-- Appetizers -->
                 <div class = "item">
@@ -80,7 +127,7 @@
                 </div>
             
             </div> <!-- end of container -->
-            <h2 style = "font-size: 40px; font-weight: bold; text-align: center; padding: 30px; padding-bottom: 60px; ">Entrees</h2>
+            <h2 style = "font-size: 40px; font-weight: bold; text-align: center; padding: 30px; padding-bottom: 60px; " id = "en">Entrees</h2>
             <div class = "container">
                 <!-- Entrees -->
                 <div class = "item">
@@ -136,7 +183,7 @@
             </div> <!-- End of entrees -->
             </div> <!-- End of container -->
 
-            <h2 style = "text-align: center; font-size: 30px; font-weight: bold; padding: 40px; border-bottom: 10px solid rgb(60, 85, 117); ">Drinks</h2>
+            <h2 style = "text-align: center; font-size: 30px; font-weight: bold; padding: 40px; border-bottom: 10px solid rgb(60, 85, 117); " id = "dr">Drinks</h2>
             <div class = "containerize-column">
                 <div class="containerize-row">
                     <div class="drinks">
@@ -186,7 +233,7 @@
                     </div>    
                 </div>       
                 </div>
-                <h2 style = "text-align: center; font-size: 30px; font-weight: bold; padding: 40px; border-top: 10px solid rgb(60, 85, 117); border-bottom: 10px solid rgb(60, 85, 117); ">Desserts</h2>
+                <h2 style = "text-align: center; font-size: 30px; font-weight: bold; padding: 40px; border-top: 10px solid rgb(60, 85, 117); border-bottom: 10px solid rgb(60, 85, 117); " id = "de">Desserts</h2>
                 <div class="containerize-row">
                     
                     <div class="drinks">
@@ -214,6 +261,12 @@
        
         </div> 
     </div>
+    <!--Footer Start-->
+    <section class="Footer" style = "background-color: white">
+        <div class="container2">
+            <p>All rights reserved. Designed by James Clemens TSA.</p>
+        </div>
+    </section>
     
     <script>
         var acc = document.getElementsByClassName("item");
@@ -232,6 +285,19 @@
             }
         });
         }
+     
+        var navOffset = document.getElementById("southamerican").offsetTop;
+        window.addEventListener("scroll", () => {
+            const scrollPos = window.scrollY;
+            var nav = document.getElementById("Navbar");
+            var dropdown = document.getElementById("dropdown");
+            if (scrollPos > navOffset){
+                nav.classList.add("dark-background");
+            } else {
+                nav.classList.remove("dark-background");
+              
+            }
+        })
     </script>
 </body>
 </html>
